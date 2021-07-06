@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: GamePlayerPrefab
+  m_EditorClassIdentifier: 
+  m_GroupName: GamePlayerPrefab
+  m_Data:
+    m_SerializedData: []
+  m_GUID: ce68d68103009814090f849191242366
+  m_SerializeEntries:
+  - m_GUID: 72de0c64f2c6a498096698322c976a67
+    m_Address: Assets/Sunnyland/artwork/Sprites/player/idle/player-idle-1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 1916d8e91cbda664d9fcf7be161866a6, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: b8dfb16eeadd87f4ab34dfcc2b6f9428, type: 2}
+    - {fileID: 11400000, guid: 9bb4b1c8de6b3ee41a40ff6bc1044d07, type: 2}
