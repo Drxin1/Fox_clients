@@ -145,5 +145,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerRB: {fileID: 7393827487252741192}
   moveSpeed: 10
-  jumpForce: 10
+  jumpForce: 6.5
   jumpTimes: 2
