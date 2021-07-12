@@ -11,11 +11,14 @@ public class Move : MonoBehaviour
     [SerializeField]private float moveSpeed;
     [SerializeField]private float jumpForce;
     [SerializeField]private int jumpTimes;
+    // [SerializeField]private Transform groundCheckTrans;
+    public Animator ani = null;
     // Update is called once per frame
 
     private Player player;
     private float horizontalDir;
     private bool isJump;
+    // private LayerMask 
     void Start()
     {
         PlayerInit();
@@ -44,14 +47,16 @@ public class Move : MonoBehaviour
         if (horizontalDir != 0)
         {
             transform.localScale = new Vector3(horizontalDir, 1, 1);
+            ani.SetFloat("running",Math.Abs(horizontalDir));
         }
+        
 
         if (isJump)
         {
-            player.jumpForce = jumpForce;//目前测试的时候小狐狸的受力源于外部输入，等之后正式版本，会依赖于内部修改，就可以不用更新了
-            Debug.LogWarning( "当前跳跃速度"+Convert.ToString(player.jumpForce));
+            player.jumpForce = jumpForce; //目前测试的时候小狐狸的受力源于外部输入，等之后正式版本，会依赖于内部修改，就可以不用更新了
             playerRB.velocity = new Vector2(playerRB.velocity.x, player.jumpForce);
             isJump = false;
+            // player.jumpTimes--;
         }
     }
     
